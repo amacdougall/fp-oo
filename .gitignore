@@ -7,3 +7,6 @@ pom.xml
 
 # vim swapfiles
 *.sw[l-p]
+
+# leiningen working directories
+/target/
