@@ -24,7 +24,7 @@
 (apply + 1 1 [1 1]) ;; looks like apply flattens?
 
 ;; the Clojure source code explains exactly what partial is: it's a macro,
-;; using defn (which I don't quite get yet). Full details at the following URL.
+;; using defn (which is sugar for def fn[]). Full details at the following URL.
 ;; I was more or less right though!
 ;;
 ;; https://github.com/clojure/clojure/blob/d0c380d9809fd242bec688c7134e900f0bbedcac/src/clj/clojure/core.clj#L2336
@@ -70,7 +70,7 @@
 ;; practice I think I could get used to it. Makes very simple something that
 ;; would be very verbose in JS, for instance.
 
-((comp str +) 8 8 8) ;; composed function applies inputs right to left
+((comp str +) 10 8 8) ;; composed function applies inputs right to left
 
 (def input [[:times 5] [:line-number 3] ["hello" "goodbye"]])
 
